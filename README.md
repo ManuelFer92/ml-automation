@@ -4,8 +4,8 @@ emoji: 🤖
 colorFrom: indigo
 colorTo: blue
 sdk: gradio
-sdk_version: "4"     # o quítalo si no quieres fijar versión
-app_file: app.py     # <-- tu archivo con Gradio (está en la raíz)
+sdk_version: 4.38.1   # 🔹 Usa una versión válida y actual
+app_file: app.py       # Tu archivo principal (está en la raíz del repo)
 pinned: false
 ---
 
