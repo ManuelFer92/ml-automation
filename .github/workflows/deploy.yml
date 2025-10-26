@@ -38,7 +38,8 @@ jobs:
           echo "Working dir: $WORKDIR"
       
           # 1) Clona el Space FUERA del workspace para evitar recursion
-          git clone "https://user:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE_ID}" "${WORKDIR}/space_repo"
+          # git clone "https://user:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE_ID}" "${WORKDIR}/space_repo"
+          git clone "https://:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE_ID}" "${WORKDIR}/space_repo"
       
           # 2) Sincroniza del repo de GitHub -> Space (excluyendo metadatos y el propio dir)
           rsync -av --delete \
